@@ -118,6 +118,7 @@ To ensure your detection rules are functioning as expected, run the following on
 3. check_query_main.py
 
 
+
 ## 📝 Documentation
 
 For more detailed information on how to use and customize the Detection as Code refere to the comments within the code.
@@ -125,7 +126,7 @@ For more detailed information on how to use and customize the Detection as Code 
 
 ## 🤝 Acknowledgements
 
-Provide ideas and inspiration for this project: https://medium.com/threatpunter/from-soup-to-nuts-building-a-detection-as-code-pipeline-28945015fc38
+Provide ideas & inspiration for this project: https://medium.com/threatpunter/from-soup-to-nuts-building-a-detection-as-code-pipeline-28945015fc38
 
 © SentinelByte | dancohvax
 
