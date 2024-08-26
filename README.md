@@ -2,10 +2,12 @@
 
 Welcome to the **Detection as Code Pipeline** repository! This project aims to streamline and enhance threat detection through a robust, scalable pipeline built on the principles of "detection as code." This repository provides a comprehensive solution for creating, testing, and deploying detection rules in a systematic and automated manner. ***This Repo focus with ELK stack !!!***.
 
+
 ## 📋 Overview
 
 ***This Repo focus with ELK stack !!!***.
 The Detection as Code Pipeline is designed to bridge the gap between detection engineering and development practices. It enables security teams to define, test, and manage detection rules as code, ensuring that these rules are both effective and maintainable. This approach brings the benefits of version control, automated testing, and continuous integration to the realm of security detection.
+
 
 ## 🚀 Features
 
@@ -14,6 +16,7 @@ The Detection as Code Pipeline is designed to bridge the gap between detection e
 - **Continuous Integration**: Integrate with CI/CD pipelines to automate the deployment and updating of detection rules.
 - **Scalability**: Designed to scale with your organization's needs, handling complex rule sets and large datasets efficiently.
 - **Documentation and Examples**: Comprehensive documentation and example configurations to get you started quickly.
+
 
 ## 🛠️ Getting Started
 
@@ -104,6 +107,7 @@ Before you start, ensure you have the following installed:
    python3 check_query_main.py
    ```
 
+
 ## 🧪 Testing
 
 You can run this code locally and see if everything works.
@@ -113,13 +117,16 @@ To ensure your detection rules are functioning as expected, run the following on
 2. create_rile.py
 3. check_query_main.py
 
+
 ## 📝 Documentation
 
 For more detailed information on how to use and customize the Detection as Code refere to the comments within the code.
 
+
 ## 🤝 Acknowledgements
 
-Much thanks to the author of the [Medium article](https://medium.com/threatpunter/from-soup-to-nuts-building-a-detection-as-code-pipeline-28945015fc38) for providing foundational ideas and inspiration for this project.
+Provide ideas and inspiration for this project: https://medium.com/threatpunter/from-soup-to-nuts-building-a-detection-as-code-pipeline-28945015fc38
 
 © SentinelByte | dancohvax
+
 Happy detecting! 🚀🔍
