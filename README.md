@@ -27,6 +27,8 @@ Before you start, ensure you have the following installed:
 - [Docker](https://www.docker.com/) (for containerized environments)
 - [Requests](https://pypi.org/project/requests/)
 - [Elastic_Cloud](https://www.elastic.co/guide/en/security/current/security-apis.html)
+- [elasticsearch - Elasticsearch]
+- [elastic_transport - RequestsHttpNode]
 
 
 ### Installation and Usage
