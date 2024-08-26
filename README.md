@@ -1,9 +1,10 @@
-# Detection as Code
+# Detection as Code (ELK Stack)
 
-Welcome to the **Detection as Code Pipeline** repository! This project aims to streamline and enhance threat detection through a robust, scalable pipeline built on the principles of "detection as code." This repository provides a comprehensive solution for creating, testing, and deploying detection rules in a systematic and automated manner.
+Welcome to the **Detection as Code Pipeline** repository! This project aims to streamline and enhance threat detection through a robust, scalable pipeline built on the principles of "detection as code." This repository provides a comprehensive solution for creating, testing, and deploying detection rules in a systematic and automated manner. ***This Repo focus with ELK stack !!!***.
 
 ## 📋 Overview
 
+***This Repo focus with ELK stack !!!***.
 The Detection as Code Pipeline is designed to bridge the gap between detection engineering and development practices. It enables security teams to define, test, and manage detection rules as code, ensuring that these rules are both effective and maintainable. This approach brings the benefits of version control, automated testing, and continuous integration to the realm of security detection.
 
 ## 🚀 Features
@@ -30,11 +31,28 @@ Before you start, ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/<repo>.git
+   git clone https://github.com/SentinelByte/Detection_as_Code.git
    cd detection-as-code
    ```
 
-2. **Set Up CI Environment**
+2. **Store the create_json.py for custom runs**
+
+   Create a dedicated VM (Virtual Machine) on your prefered cloud provider (GCP/AWS/Azure/etc.) and store the create_json.py code.
+   
+   Altrernatively, you can use a local machine (Note! just make sure you have a proper allowed connection to the ELK SaaS and API Endpoints).
+
+   Upon detection rule creation, you will trigger manually this code and it will take you through the process of a JSON file creation, that will be used later for the detection rule creation.
+
+3. **Set up cron**
+
+   Set up a cron job or other method to push any json file created from step 2 to your Github account.
+   
+5. **Set Up a Github Actions job**
+
+   This will allow you to push ths json file to a CICD tool such as Jenkins to run the code and create the detection rule.
+   The job should fetch a JSON file created from the crate_json.py code.
+   
+6. **Set Up CI Environment**
    
    Use Github Actions/ Juenkins as you wish
    If needed, create a virtual environment and install dependencies:
@@ -45,11 +63,11 @@ Before you start, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-4. **Configure the Pipeline**
+7. **Configure the Pipeline**
 
    Update the configuration files located in the `config` directory. Refer to `config/README.md` for detailed instructions on setting up the environment and defining your detection rules.
 
-5. **Run the Pipeline**
+8. **Run the Pipeline**
 
    Start the pipeline using Docker:
 
@@ -65,6 +83,8 @@ Before you start, ensure you have the following installed:
 
 ## 🧪 Testing
 
+You can run this code locally and see if everything works.
+Make sure you have connection between your local machine to the Elastic endpint.
 To ensure your detection rules are functioning as expected, run the following one by one:
 1. craft_json.py
 2. create_rile.py
