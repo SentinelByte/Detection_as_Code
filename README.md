@@ -31,14 +31,14 @@ Before you start, ensure you have the following installed:
 
 ### Installation and Usage
 
-1. **Clone the Repository**
+1. ***Clone the Repository***
 
    ```
    git clone https://github.com/SentinelByte/Detection_as_Code.git
    cd detection-as-code
    ```
 
-2. **Store the create_json.py for custom runs**
+2. ***Store the create_json.py for custom runs***
 
    Create a dedicated VM (Virtual Machine) on your prefered cloud provider (GCP/AWS/Azure/etc.) and store the create_json.py code.
    
@@ -46,7 +46,7 @@ Before you start, ensure you have the following installed:
 
    Upon detection rule creation, you will trigger manually this code and it will take you through the process of a JSON file creation, that will be used later for the detection rule creation.
 
-3. **Set up a push job to your CICD tool**
+3. ***Set up a push job to your CICD tool***
 
    To run the code and create the detection rule, push ths json file to your CICD tool (Jenkins/ GitLab CI/CD/ Circle CI/ etc).
    
@@ -69,7 +69,7 @@ Before you start, ensure you have the following installed:
    
    ** Note! You can adjust the cron job interval to your needs.
    
-5. **Set Up CI Environment**
+5. ***Set Up CI Environment***
    
    Use Github Actions/ Juenkins/ etc.
    If needed, create a virtual environment and install dependencies:
@@ -80,7 +80,7 @@ Before you start, ensure you have the following installed:
    pip install -r requirements.txt
    ```
 
-7. **Configure the Pipeline**
+7. ***Configure the Pipeline***
 
    Update the configuration files located in the `config` directory.
    you will need to run the following:
@@ -91,7 +91,7 @@ Before you start, ensure you have the following installed:
       - validate_qury.py
       - check_query.py
 
-9. **Run the Pipeline**
+9. ***Run the Pipeline***
 
    Start the pipeline using Docker:
 
